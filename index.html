@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suite MariaGiulia</title>
+  <link rel="stylesheet" href="styles.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Raleway:wght@300;400&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <div class="logo">Suite MariaGiulia</div>
+    <ul>
+      <li><a href="#about">Benvenuti</a></li>
+      <li><a href="#start-day">Inizia la giornata</a></li>
+      <li><a href="#experiences">Esperienze</a></li>
+      <li><a href="#booking">Prenotazioni</a></li>
+      <li><a href="#contact">Contatti</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero">
+    <div class="slideshow">
+      <img src="images/lungomare-santa-maria-monopoli.jpg" class="slide active">
+      <img src="images/monopoli-italyidec052021.jpg_08.jpg" class="slide">
+      <img src="images/monopoli-porto-vecchio-2020.jpg" class="slide">
+      <img src="images/spiaggia-cala-porta-vecchia-dron.jpg" class="slide">
+    </div>
+    <div class="hero-overlay">
+      <h1>Suite Maria Giulia</h1>
+      <p>Una suite sul mare a Monopoli</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="section light" id="about">
+      <div class="content-container">
+        <div class="text">
+          <h2>Benvenuti</h2>
+          <p>Scopri la nostra elegante suite a pochi passi dal mare. Un rifugio tranquillo e raffinato nel cuore della
+            Puglia.
+            Goditi il comfort di una struttura moderna, immersa nella tradizione locale. La Suite MariaGiulia è il luogo
+            ideale
+            per rilassarti, esplorare le bellezze naturali e vivere un'esperienza autentica. Ogni dettaglio è stato
+            pensato per
+            offrirti un soggiorno indimenticabile, con servizi esclusivi e un'accoglienza calorosa.</p>
+        </div>
+        <div class="image-gallery">
+          <img src="images/pic01.jpg" alt="Vista della suite 1" class="gallery-image">
+          <img src="images/pic04.jpg" alt="Vista della suite 2" class="gallery-image">
+          <img src="images/pic02.jpg" alt="Vista della suite 3" class="gallery-image">
+          <img src="images/pic03.jpg" alt="Vista della suite 4" class="gallery-image">
+          <img src="images/360774103.jpg" alt="Vista della suite 5" class="gallery-image">
+        </div>
+      </div>
+    </section>
+
+    <section class="section dark" id="start-day">
+      <div class="content-container">
+        <div class="image-gallery">
+          <img src="images/I-dettagli-fanno-la-differenza.jpg" alt="Vista della suite 1" class="gallery-image">
+          <img src="images/dsc02297.jpg" alt="Vista della suite 2" class="gallery-image">
+        </div>
+        <div class="text">
+          <h2>Inizia la giornata</h2>
+          <p>Ogni mattina ti aspetta una colazione genuina, preparata con amore e ingredienti freschi della tradizione
+            pugliese.
+            Potrai gustare dolci fatti in casa, frutta di stagione, marmellate artigianali e una selezione di bevande
+            calde e fredde.
+            La colazione viene servita in un ambiente accogliente, con una vista mozzafiato sul mare, per iniziare la
+            giornata nel
+            migliore dei modi. Siamo lieti di soddisfare anche esigenze alimentari particolari, su richiesta.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section light" id="experiences">
+      <div class="content-container">
+        <div class="text">
+          <h2>Esperienze</h2>
+          <p>La Puglia offre un'infinità di esperienze uniche, e noi siamo qui per aiutarti a scoprirle. Dalle
+            escursioni in barca
+            lungo la costa, con aperitivo a bordo, fino alle passeggiate a cavallo in riva al mare.
+            Potrai visitare borghi pittoreschi, partecipare a sagre di cucina tradizionale e immergerti nella cultura
+            locale.
+            Ogni esperienza è pensata per farti vivere momenti indimenticabili, in armonia con la natura e la storia di
+            questa terra.</p>
+        </div>
+        <div class="image-gallery">
+          <img src="images/Barca_a_vela.jpg" alt="Vista della suite 1" class="gallery-image">
+          <img src="images/Escursioni-in-barca-Sea-discover.jpg" alt="Vista della suite 2" class="gallery-image">
+          <img src="images/passeggiate-cavallo-puglia.jpg" alt="Vista della suite 3" class="gallery-image">
+        </div>
+      </div>
+    </section>
+
+    <section class="section dark" id="booking">
+      <div class="content-container">
+        <div class="booking-form">
+          <form action="submit_booking.php" method="POST">
+            <div class="form-group">
+              <label for="name">Nome</label>
+              <input type="text" id="name" name="name" placeholder="Il tuo nome" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="La tua email" required>
+            </div>
+            <div class="form-group">
+              <label for="checkin">Data di arrivo</label>
+              <input type="date" id="checkin" name="checkin" required>
+            </div>
+            <div class="form-group">
+              <label for="checkout">Data di partenza</label>
+              <input type="date" id="checkout" name="checkout" required>
+            </div>
+            <div class="form-group">
+              <label for="guests">Numero di ospiti</label>
+              <input type="number" id="guests" name="guests" min="1" max="10" placeholder="Numero di ospiti" required>
+            </div>
+            <div class="form-group">
+              <label for="notes">Annotazioni aggiuntive</label>
+              <textarea id="notes" name="notes" placeholder="Annotazioni" rows="4"></textarea>
+            </div>
+            <button type="submit" class="btn">Prenota</button>
+          </form>
+        </div>
+        <div class="text">
+          <h2>Prenota il tuo soggiorno</h2>
+          <p>Compila il modulo sottostante per prenotare il tuo soggiorno presso la Suite MariaGiulia. Ti contatteremo
+            al più presto per confermare la tua prenotazione.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="content-container">
+        <div class="text">
+          <h2>Contattaci</h2>
+          <p>Email: info@suite-mariagiulia.it</p>
+          <p>Telefono: +39 333 1234567</p>
+          <p>Non vediamo l'ora di accoglierti nella nostra suite e rendere il tuo soggiorno indimenticabile. Per
+            qualsiasi domanda
+            o richiesta, non esitare a contattarci. Saremo felici di aiutarti a pianificare il tuo soggiorno e a
+            soddisfare ogni tua esigenza. La tua esperienza è la nostra priorità.</p>
+        </div>
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.948489123456!2d17.300000!3d40.950000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1347b123456789ab%3A0x123456789abcdef!2sMonopoli%2C%20BA!5e0!3m2!1sit!2sit!4v1610000000000!5m2!1sit!2sit"
+            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+          </iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- Footer -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-logo">
+      <h3>Suite MariaGiulia</h3>
+      <p>Una suite sul mare a Monopoli.</p>
+    </div>
+    <div class="footer-links">
+      <h4>Link Utili</h4>
+      <ul>
+        <li><a href="#about">Benvenuti</a></li>
+        <li><a href="#start-day">Inizia la giornata</a></li>
+        <li><a href="#experiences">Esperienze</a></li>
+        <li><a href="#booking">Prenotazioni</a></li>
+        <li><a href="#contact">Contatti</a></li>
+      </ul>
+    </div>
+    <div class="footer-contact">
+      <h4>Contattaci</h4>
+      <p>Email: <a href="mailto:info@suite-mariagiulia.it">info@suite-mariagiulia.it</a></p>
+      <p>Telefono: <a href="tel:+393331234567">+39 333 1234567</a></p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Suite MariaGiulia. Tutti i diritti riservati.</p>
+    <p>Realizzato da <a href="https://www.tuosito.com" target="_blank">Vincenzo Tito</a></p>
+  </div>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
